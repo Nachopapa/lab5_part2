@@ -30,16 +30,20 @@ class PostForm extends Component {
     const{userId,album} =this.state
         return (
             <div>
+                <h2>Adding </h2>
                 <form onSubmit={this.submitHandler}>
                     <div>
+                        <label>Userid: </label>
                         <input type="text" name='userId' value={userId}
                         onChange={this.changeHandler}/>
                      </div>
                      <div>
+                        <label>Album: </label>
                         <input type="text" name='album' value={album}
                         onChange={this.changeHandler}/>
                      </div>
                      <button type='submit'>Submit</button>
+                     
                 </form>
             </div>
         )
